@@ -1,2 +1,2 @@
-# SotckManagamentCsharp
+# StockManagamentCsharp
 Assignment 4
