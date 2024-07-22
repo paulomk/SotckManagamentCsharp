@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    var groupedItems = ViewBag.GroupedItems as IEnumerable<dynamic>;
+}
+
+<h1>Index</h1>
+
+<p>
+    Top 10 Items
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item Name</th>
+            <th>Count</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in groupedItems)
+    {
+        <tr>
+            <td>@item.ItemName</td>
+            <td>@item.Count</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
